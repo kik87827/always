@@ -161,7 +161,7 @@ function productSwiperFunc(){
 	if(product_swiper_obj == null){
 		product_swiper = document.querySelector(".mc_product_container");
 		product_swiper_slide = product_swiper.querySelectorAll(".swiper-slide");
-		if(product_swiper_slide>1){
+		if(product_swiper_slide.length>1){
 			product_swiper_obj = new Swiper(".mc_product_container", {
 				slidesPerView: "auto",
 				spaceBetween: 20,
