@@ -1,0 +1,8 @@
+/node_modules
+
+/pc/.history
+/mobile/.history
+
+*.json
+
+/.git
