@@ -307,6 +307,77 @@ function youtubeSwiperUpdate(){
 }
 
 
+// half left
+let halfleft_swiper_obj = null;
+function halfleftSwiperFunc(){
+	let halfleft_swiper = null;
+	let halfleft_swiper_slide = null;
+	if(halfleft_swiper_obj == null){
+		halfleft_swiper = document.querySelector(".half_left_swiper");
+		halfleft_swiper_slide = halfleft_swiper.querySelectorAll(".swiper-slide");
+		if(halfleft_swiper_slide.length>1){
+			halfleft_swiper_obj = new Swiper(".half_left_swiper", {
+				speed : 1000,
+				loop : true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					clickable: true,
+					el: ".swiper-pagination.mc_paging.left_half_paging",
+				},
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				}
+			});
+		}
+	}
+}
+function halfleftSwiperUpdate(){
+	if(halfleft_swiper_obj !== null){
+		halfleft_swiper_obj.update();
+	}
+}
+
+
+// half right
+let halfright_swiper_obj = null;
+function halfrightSwiperFunc(){
+	let halfright_swiper = null;
+	let halfright_swiper_slide = null;
+	if(halfright_swiper_obj == null){
+		halfright_swiper = document.querySelector(".half_right_swiper");
+		halfright_swiper_slide = halfright_swiper.querySelectorAll(".swiper-slide");
+		if(halfright_swiper_slide.length>1){
+			halfright_swiper_obj = new Swiper(".half_right_swiper", {
+				speed : 1000,
+				loop : true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					clickable: true,
+					el: ".swiper-pagination.mc_paging.right_half_paging",
+				},
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				}
+			});
+		}
+	}
+}
+function halfrightSwiperUpdate(){
+	if(halfright_swiper_obj !== null){
+		halfright_swiper_obj.update();
+	}
+}
+
+
+
 // sub
 function titleToggle(){
 	const btn_title_toggle = document.querySelectorAll(".btn_title_toggle");
