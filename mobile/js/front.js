@@ -206,3 +206,16 @@ function btnToggleItem(){
 		etarget.classList.toggle("active");
 	});
 }
+
+function siblings(t) {
+    var children = t.parentElement.children;
+    var tempArr = [];
+
+    for (var i = 0; i < children.length; i++) {
+        tempArr.push(children[i]);
+    }
+
+    return tempArr.filter(function(e){
+        return e != t;
+    });
+}

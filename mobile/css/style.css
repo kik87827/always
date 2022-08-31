@@ -71,18 +71,20 @@
 .list_thum_spec_main{font-size:13px;color:#2b2b2b;}
 .list_thum_spec_sub{font-size:11px;color:#999999;margin-top:5px;}
 .list_thum_spec_else_both{padding: 12px 20px 20px;display:flex;align-items: center;justify-content: space-between;}
+.btn_list_control_group{display:inline-block;font-size:0;line-height:0;}
+
 .thum_spec_price{font-size:14px;font-weight:700;color:#2b2b2b;line-height:1;}
-.btn_list_thumbox{font-size:13px;color:#c20000;border:1px solid #c20000;line-height:1;padding:5px 15px 7px;border-radius:100px;}
+.btn_list_thumbox{display:inline-block;font-size:13px;color:#c20000;border:1px solid #c20000;line-height:1;padding:8px 15px 9px;border-radius:100px;}
 .btn_list_thumbox.define_toggle{
-    border-color:#acacac;font-size:13px;padding:5px 30px 7px 15px;color:#333333;position:relative;
-    
+    border-color:#acacac;font-size:13px;padding:8px 30px 9px 15px;color:#333333;position:relative;
 }
 .btn_list_thumbox.define_toggle:after{display:block;content:'';width:8px;height:8px;border-right:1px solid #8e8e8e;border-bottom:1px solid #8e8e8e;
-    transform:translateZ(0) rotate(45deg);position:absolute;top:5px;right:13px;
+    transform:translateZ(0) rotate(45deg);position:absolute;top:8px;right:13px;
 }
 .btn_list_thumbox.define_toggle.expand:after{
-    transform:translateZ(0) rotate(225deg);top:10px;
+    transform:translateZ(0) rotate(225deg);top:13px;
 }
+.btn_list_thumbox[data-toggle].hidden{display:none;}
 .list_thum_obj:last-of-type{margin-bottom:0;}
 
 .list_thum_spec_spot{display:flex;align-items:center;margin-bottom:13px;}
@@ -180,8 +182,8 @@
 .author_text{font-size:12px;color:#2b2b2b;line-height:1;margin-left:5px;white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
 
 
-.list_option_zone{margin-top:14px;display:none;}
-.list_option_zone.active{display:block;}
+.list_option_zone{margin:14px -20px 0;position:relative;height:0;overflow:hidden;padding:0 20px;}
+.list_option_zone.active{height:auto;}
 .hor_scroll_calendar_box{border:1px solid #dadada;border-radius:8px;}
 .calenar_title_row{padding:17px 0;border-bottom:1px solid #e7e7e7;text-align: center;display:flex;justify-content: center;align-items: center;font-size:0;line-height:0;}
 .btn_calendar_title_control{display:block;width:17px;height:17px;border:1px solid #cfd0d3;border-radius:100%;flex:0 0 17px;margin:0 10px;position:relative;}
@@ -195,7 +197,7 @@
 }
 .calendar_current{font-size:15px;color:#1b1b1b;font-weight:500;}
 .calendar_content_row{padding:15px 0;position:relative;}
-.btn_calendar_content_control{display:block;background-color:#fff;width:20px;height:20px;border:1px solid #c7c7c7;border-radius:100%;flex:0 0 20px;position:absolute;top:50%;transform: translateY(-50%);}
+.btn_calendar_content_control{display:block;z-index:5;background-color:#fff;width:20px;height:20px;border:1px solid #c7c7c7;border-radius:100%;flex:0 0 20px;position:absolute;top:50%;transform: translateY(-50%);}
 .btn_calendar_content_control:after{
 	display:block;width:5px;height:5px;border-left:1px solid #2a2a2a;border-bottom:1px solid #2a2a2a;content:'';position:absolute;top:6px;left:7px;
 	transform: translateZ(0) rotate(45deg);
