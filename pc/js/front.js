@@ -126,7 +126,11 @@ function mainVisual(){
             navigation: {
                 nextEl: '.btn_mv_control.next_control',
                 prevEl: '.btn_mv_control.prev_control',
-            }
+            },
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			}
 		});
 		btn_mv_stop = document.querySelector(".btn_mv_stop");
 		btn_mv_play = document.querySelector(".btn_mv_play");
@@ -159,6 +163,10 @@ function bestSwiperFunc(){
 			pagination: {
 				clickable: true,
 				el: ".best_swiper .swiper-pagination.mc_paging",
+			},
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false
 			},
 		});
 	}
