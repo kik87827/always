@@ -146,6 +146,19 @@
 .sort_form_cell{flex:1;margin-right:14px;}
 .sort_form_cell .form_select{}
 .sort_form_cell:last-of-type{}
+
+/* 221031 추가 */
+.sort_form_both_group{}
+.sort_form_both_group .sort_form_both{}
+.sort_form_both.type2{}
+.sort_form_both_group .sort_form_both:last-of-type{}
+.sort_form_cols{}
+.sort_form_cols:last-of-type{}
+.count_num_item{}
+.count_num_current{}
+/* // 221031 추가 */
+
+
 .form_select{}
 .form_select{font-family: 'Noto Sans KR';height:32px;border:0;width:100%;border-bottom:1px solid #d4d4d4;color:#333333;box-sizing: border-box;font-size:14px;padding: 0 33px 0 7px;border-radius:0;-webkit-border-radius:0;
     background: #fff url("../images/icon_select.png") no-repeat 100% 50%/22.5px auto;line-height:1;-webkit-appearance:none;-moz-appearance:none;appearance:none;

@@ -9,6 +9,11 @@
 .swiper-container.main_visual_container .swiper-slide{}
 .mc_vitem .swiper-nodata{width:100%;height:300px;display:flex;align-items: center;justify-content: center;}
 .main_visual_banner{display:block;height:883px;background-position:50% 50%;background-repeat:no-repeat;}
+.main_visual_banner_has_img{
+	display:block;max-width:1260px;margin:0 auto;
+}
+.main_visual_banner_has_img > img{vertical-align: top;width:100%;}
+
 .mv_bottom_control_wrap{display:flex;justify-content: center;align-items:center;position:absolute;bottom:27px;left:0;width:100%;z-index:10;}
 .mv_bottom_cols{margin:0 6px;}
 .mv_bottom_cols.has_navi{}

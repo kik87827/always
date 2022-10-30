@@ -139,3 +139,20 @@ html.smooth {scroll-behavior: smooth;}
     .botmenu_wrap{padding:20px 0;}
 }
 
+
+
+/* 221031 추가 */
+.mbmenu_toggle_one{}
+.mbmenu_toggle_one:after{}
+.mbmenu_toggle_one.active:after{}
+.mbmenu_two_list_wrap{}
+.mbmenu_two_list{}
+.mbmenu_two_list > li{}
+.mbmenu_two_list > li:last-of-type{}
+.mbmenu_two{}
+.mbmenu_dep_list_wrap{}
+.mbmenu_dep_list{}
+.mbmenu_dep_list > li{}
+.mbmenu_dep_list > li:last-of-type{}
+.mbmenu_three{}
+/* // 221031 추가 */

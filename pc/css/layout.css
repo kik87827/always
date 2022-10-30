@@ -75,6 +75,67 @@ input.topsearch_input::-ms-input-placeholder{color:#999;font-size:15px;}
 .header_gnb_list > li:last-of-type{}
 .header_gnb_one{display:flex;height:68px;align-items: center;justify-content: center;}
 .header_gnb_one:hover .gnb_one_intext{color:#c20000}
+
+/* 221031 추가 */
+.header_gnb_fxwrap{}
+.header_gnb_fxwrap .gnb_one{}
+.header_gnb_fxwrap .gnb_one:hover{}
+.btn_header_total{}
+.btn_header_total_in{}
+.btn_header_total_in:before{}
+.btn_header_total_in:after{}
+.header_gnb_list_wrap{}
+.header_gnb_list{}
+.header_gnb_list > li{}
+.header_gnb_list > li:last-of-type{}
+
+.global_menu_layer{}
+.global_menu_pix_inner{}
+.global_menu_long{}
+.global_menu_row{}
+.global_menu_row:last-of-type{}
+.gmenu_list{}
+.gmenu_list > li{}
+.gmenu_list > li:last-of-type{}
+.gmenu_one_row{}
+.gmenu_one{}
+.gmenu_two_row{}
+.gmenu_two_list{}
+.gmenu_two_list > li{}
+.gmenu_two_list > li:last-of-type{}
+.gmenu_two{}
+.gmenu_two:hover{}
+
+.global_menu_short{}
+.total_menu_label_row{}
+.total_menu_label{}
+.total_menu_content_row{}
+.total_menu_list{}
+.total_menu_list > li{}
+.total_menu_list > li:last-of-type{}
+.total_menu{}
+
+.sub_templete{display:flex;width:1200px;min-width:0}
+.sub_templete_cell{}
+.sub_templete_cell.define_left{flex:0 0 170px;}
+.sub_templete_cell.define_right{flex:1;min-width:0;margin-left:50px;}
+.sub_category_menu_group{border-top:2px solid #1a2e46;position:sticky;top:0;left:0;width:170px;background:#fff;}
+.sub_category_list{}
+.sub_category_list > li{}
+.sub_category_list > li:last-of-type{}
+.sub_cate_group{}
+.sub_cate_title_row{}
+.sub_cate_title{}
+.sub_cate_content_row{}
+.sub_cate_dep_list{}
+.sub_cate_dep_list > li{}
+.sub_cate_dep_list > li:last-of-type{}
+.sub_cate_dep{}
+.sub_cate_dep:hover{}
+
+/* // 221031 추가 */
+
+
 .gnb_one_intext{font-size:18px;color:#1f1f1f;display:inline-block;line-height:1;letter-spacing: -.5px;font-weight:500;}
 .head_totalmenu_label{white-space: nowrap;margin-right:13px;font-size:16px;color:#1f1f1f;}
 .btn_totalmenu{display:flex;width:36px;height:24px;position:relative;align-items: center;}
