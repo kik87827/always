@@ -99,8 +99,27 @@ function layoutFunc(){
 			});
 		}
 	}
+	function gnbTotalMenu(){
+		const header_zone = document.querySelector(".header_zone");
+		const btn_header_total = document.querySelector(".btn_header_total");
+		const global_menu_layer = document.querySelector(".global_menu_layer");
+		if(btn_header_total === null || global_menu_layer === null){return;}
+
+		btn_header_total.addEventListener("mouseover",()=>{
+			global_menu_layer.classList.add("active");
+		});
+
+		header_zone.addEventListener("mouseleave",()=>{
+			global_menu_layer.classList.remove("active");
+		});
+
+		btn_header_total.addEventListener("click",()=>{
+			global_menu_layer.classList.toggle("active");
+		});
+	}
 	goTop();
 	footerSwiper();
+	gnbTotalMenu();
 }
 
 
@@ -413,3 +432,4 @@ function titleToggle(){
 		},false);
 	}
 }
+
