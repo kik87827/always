@@ -58,6 +58,7 @@ function layoutFunc(){
         var btn_htotal = document.querySelector(".btn_hdtotal"),
             mobile_mainmenu_zone = document.querySelector(".mobile_mainmenu_zone"),
             mainmenu_dim = document.querySelector(".mainmenu_dim"),
+            mbmenu_toggle_one = document.querySelectorAll(".mbmenu_toggle_one"),
             btn_mbmenuclose = document.querySelector(".btn_mbmenuclose"),
             domHtml = document.querySelector("html"),
             domBody = document.querySelector("body");
@@ -72,6 +73,15 @@ function layoutFunc(){
             e.preventDefault();
             totalClose();
         },false);
+		mbmenu_toggle_one.forEach((element)=>{
+			element.addEventListener("click",function(e){
+				e.preventDefault();
+				let thisEventObj = e.currentTarget;
+				let thisNextObj = thisEventObj.nextElementSibling;
+				thisEventObj.classList.toggle("active");
+				thisNextObj.classList.toggle("active");
+			},false);
+		})
         mainmenu_dim.addEventListener("click",function(e){
             e.preventDefault();
             totalClose();

@@ -148,14 +148,14 @@
 .sort_form_cell:last-of-type{}
 
 /* 221031 추가 */
-.sort_form_both_group{}
-.sort_form_both_group .sort_form_both{}
-.sort_form_both.type2{}
-.sort_form_both_group .sort_form_both:last-of-type{}
+.sort_form_both_group{margin-bottom:22.5px;}
+.sort_form_both_group .sort_form_both{margin-bottom:10px;}
+.sort_form_both.type2{justify-content: space-between;}
+.sort_form_both_group .sort_form_both:last-of-type{margin-bottom:0;}
 .sort_form_cols{}
 .sort_form_cols:last-of-type{}
-.count_num_item{}
-.count_num_current{}
+.count_num_item{font-size:14px;}
+.count_num_current{color:#c20000;font-weight:500;}
 /* // 221031 추가 */
 
 
